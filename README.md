@@ -30,7 +30,16 @@ The server includes:
 - Global and clan chat with message history.
 - Request validation, rate limits, and account moderation.
 
-This repository contains the server sources. A compatible game client and the raid configuration archive must be supplied separately. A client-compatible binary payload is included in `config/anticheat.bin`. Telegram registration is not required.
+This repository contains the server sources. A compatible game client and the raid configuration archive must be supplied separately. A client-compatible binary payload is included in `config/anticheat.bin`.
+
+> **Tested only with Shadow Fight 2 version 2.32.0.** Other versions have not been verified.
+>
+> **Two small exercises are left to the reader:**
+>
+> 1. Obtain `raid_configs_all.zip` yourself and place its decoded XML files in `config/`, with the main file at `config/config.xml`. The archive and these XML files are not included here.
+> 2. Redirect a compatible game client to the IP address or hostname of your own server running SF2PS, using TCP port `9933` unless you configured another port. The client modification is yours to work out; launching the server will not persuade the game to find it on its own.
+>
+> Consider these the entrance exam. The server takes over once you can reach it.
 
 ## Getting started
 
@@ -47,7 +56,7 @@ sudo apt install build-essential cmake libsqlite3-dev zlib1g-dev
 
 ### 2. Add the raid configuration
 
-**Extract `raid_configs_all.zip` into the `config/` directory.** Preserve the archive's directory structure. The main configuration file must be at:
+**Place the decoded raid configuration XML files from `raid_configs_all.zip` in the `config/` directory.** The outer archive contains `raid_configs.zip.enc` and `raid_configs.zip.sha`; simply extracting it does not produce the XML files the server needs. Obtain the decoded contents of the inner raid configuration archive before continuing. The main configuration file must be at:
 
 ```text
 config/config.xml
