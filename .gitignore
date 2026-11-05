@@ -1,0 +1,10 @@
+/build/
+/config/*
+/sf2server.conf
+*.db
+*.db-wal
+*.db-shm
+*.db-journal
+*.log
+*.bin
+!/config/anticheat.bin
