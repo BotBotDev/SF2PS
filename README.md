@@ -10,6 +10,7 @@ In-game registration · Raids · Clans · Seasons · Chat
 ![Build](https://img.shields.io/badge/build-CMake-064F8C?style=flat-square)
 ![Database](https://img.shields.io/badge/database-SQLite-003B57?style=flat-square)
 ![Platform](https://img.shields.io/badge/platform-Linux-333333?style=flat-square)
+[![Telegram: @BotBotOfficial](https://img.shields.io/badge/Telegram-%40BotBotOfficial-26A5E4?style=flat-square&logo=telegram&logoColor=white)](https://t.me/BotBotOfficial)
 
 [Getting started](#getting-started) · [Configuration](#configuration) · [Project layout](#project-layout)
 
