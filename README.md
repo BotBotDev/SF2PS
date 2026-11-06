@@ -73,8 +73,6 @@ The login response includes an opaque binary field expected by the client. Its r
 
 This file is separate from `raid_configs_all.zip`; keep it in place when extracting the raid configuration. The server reads it without modification before starting workers. A missing, empty, oversized, or unreadable file prevents startup with an error rather than sending a placeholder to clients. Loading a file does not validate its compatibility with a particular client.
 
-Other files in `config/` are ignored by Git. Only `config/anticheat.bin` is explicitly included.
-
 ### 4. Build
 
 Run these commands from the repository root:
